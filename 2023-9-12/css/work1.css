@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+}
+
+/*导航栏*/
+header nav {
+    width: 100%;
+    height: 38px;
+    background-color: gray;
+    opacity: 30%;
+}
+header nav div {
+    display: flex;
+}
+header nav div[class='left'] {
+    float: left;
+}
+header nav div[class='right'] {
+    float: right;
+    margin-right: 20px;
+}
+header nav div a {
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+}
+header nav div[class='left'] a {
+    width: 60px;
+}
+header nav div[class='right'] a {
+    max-width: fit-content;
+    min-width: 40px;
+    margin-right: 10px;
+}
+header nav div a:hover {
+    background-color: #718fd0;
+    cursor: pointer;
+}
+
+/*主体*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    margin-top: 40px;
+}
+/*logo*/
+main .logo {
+    width: 100%;
+    /*background-color: whitesmoke;*/
+    vertical-align: center;
+    text-align: center;
+}
+main .logo img {
+    width: 200px;
+}
+/*输入框*/
+main .formItem {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 20px auto 0;
+}
+main .formItem input {
+    width: 400px;
+    height: 25px;
+    border-radius: 6px;
+    border: 2px solid #2b99ff;
+}
+main .formItem a {
+    color: whitesmoke;
+    padding: 6px 14px;
+    width: 80px;
+    height: 25px;
+    background-color: #2b99ff;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6%;
+}
+main .formItem a:hover {
+    cursor: pointer;
+}
+main .formItem .icon img {
+    padding-top: 3px;
+    width: 25px;
+    height: 25px;
+    right: 490px;
+    position: absolute;
+    z-index: 2;
+}
+main .formItem .icon:hover {
+    cursor: pointer;
+    background-color: #164685;
+    opacity: 40%;
+}
+
+/*工具盒子*/
+.box {
+    width: 60%;
+    height: 300px;
+    margin: 60px auto;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.71);
+}
+/*外围盒子*/
+.box nav {
+    width: 100%;
+}
+.box nav .left {
+    margin: 15px 20px;
+}
+.box nav .left a{
+    padding: 6px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: rgba(107, 74, 74, 0.73);
+    font-weight: bold;
+}
+.box nav .left a:hover{
+    background-color: rgba(67, 73, 82, 0.14);
+    cursor: pointer;
+}
+/*内盒子*/
+.box .innerBox {
+    width: 80%;
+    margin: auto;
+    height: 300px;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.83);
+    display: flex;
+}
+.box .innerBox .slider-container{
+    width: 80%;
+    margin: auto;
+    vertical-align: center;
+}
+.box .innerBox .slider-item{
+    border-radius: 16px;
+    overflow: hidden;
+    display: none;
+}
+.box .innerBox .slider-item img{
+    width: 580px;
+    height: 260px;
+}
+
+/*底部*/
+footer{
+    display: flex;
+}
+footer div{
+    width: 100%;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.84);
+    position: fixed;
+    bottom: 0;
+}
+footer div a{
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    font-weight: lighter;
+    color: rgba(128, 128, 128, 0.38);
+    text-align: center;
+    padding-left: 20px;
+}
+footer div a:hover{
+    cursor: pointer;
+    color: black;
+}
